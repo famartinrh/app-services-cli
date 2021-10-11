@@ -150,7 +150,7 @@ func runGrantPermissions(opts *options) (err error) {
 	}
 
 	if opts.groupPrefix != "" {
-		groupIdArg = opts.group
+		groupIdArg = opts.groupPrefix
 		groupPatternArg = kafkainstanceclient.ACLPATTERNTYPE_PREFIXED
 	}
 
